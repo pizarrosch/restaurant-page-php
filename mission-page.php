@@ -1,5 +1,6 @@
 <?php
 	$title='Mission';
+	$image = "images/pexels-engin-akyurt-1435904.jpg";
 	include 'include/header.inc.php'?>
 	<h1>Our mission</h1>
 	<p>
@@ -13,7 +14,7 @@
 	</p>
 	<figure style="text-align: center;">
 		<img style="max-width: 20rem;"
-		     src="images/pexels-burak-the-weekender-735869.jpg"
+		     src= "images/pexels-burak-the-weekender-735869.jpg"
 		     alt="Our amazing restaurant" />
 		<figcaption>Our amazing restaurant</figcaption>
 	</figure>

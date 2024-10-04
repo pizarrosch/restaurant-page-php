@@ -1,5 +1,6 @@
 <?php
-	$title="Ingredients";
+	$title = "Ingredients";
+	$image = "images/pexels-julia-volk-5273044.jpg";
 	include 'include/header.inc.php'?>
 	<h1>Our ingredients</h1>
 	<p>
