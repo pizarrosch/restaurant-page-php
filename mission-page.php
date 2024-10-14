@@ -1,5 +1,6 @@
 <?php
 	$title='Mission';
+  $pageKey='mission';
 	$image = "images/pexels-engin-akyurt-1435904.jpg";
 	include 'include/header.inc.php'?>
 	<h1>Our mission</h1>

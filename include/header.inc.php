@@ -12,9 +12,9 @@
 	<h1>Culinary Cove</h1>
 	<p>Your sanctuary for exceptional flavors</p>
 	<nav>
-		<a href="mission-page.php">Our mission</a>
-		<a href="ingredients.php">Ingredients</a>
-		<a href="menu.php">Menu</a>
+		<a class="<?php echo !empty($pageKey) && $pageKey ==="mission" ? "active" : "";?>" href="mission-page.php">Our mission</a>
+		<a class="<?php echo isset($pageKey) && $pageKey==='ingredients' ? "active" : "";?>" href="ingredients.php">Ingredients</a>
+		<a class="<?php echo isset($pageKey) && $pageKey==='menu' ? "active" : "";?>" href="menu.php">Menu</a>
 	</nav>
 </header>
 
