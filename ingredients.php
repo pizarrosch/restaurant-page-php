@@ -1,7 +1,7 @@
 <?php
-	$title = "Ingredients";
+//	$title = "Ingredients";
   $pageKey="ingredients";
-	$image = "images/pexels-julia-volk-5273044.jpg";
+//	$image = "images/pexels-julia-volk-5273044.jpg";
 	include 'include/header.inc.php'?>
 	<h1>Our ingredients</h1>
 	<p>

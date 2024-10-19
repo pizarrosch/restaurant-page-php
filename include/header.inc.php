@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="styles/simple.css" />
 	<link rel="stylesheet" href="styles/custom.css" />
-	<title><?php echo isset($title) ? $title : 'Default Title'; ?></title>
+	<title>Culinary cove<?php if(!empty($title)): ?> &bull; <?php echo $title; endif; ?></title>
 </head>
 <body>
 <header class="header-with-background"  style="background-image: url('<?php echo $image ?>');">
@@ -17,5 +17,4 @@
 		<a class="<?php echo isset($pageKey) && $pageKey==='menu' ? "active" : "";?>" href="menu.php">Menu</a>
 	</nav>
 </header>
-
 <main>
