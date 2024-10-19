@@ -17,6 +17,11 @@
  */ ?>
 </head>
 <body>
+<?php
+if (empty($image)) {
+  $image = 'images/img_placeholder.png';
+}
+?>
 <header class="header-with-background" style="background-image: url('<?php echo $image ?>');">
     <h1>Culinary Cove</h1>
     <p>Your sanctuary for exceptional flavors</p>
