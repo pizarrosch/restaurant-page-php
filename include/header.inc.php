@@ -26,10 +26,28 @@ if (empty($image)) {
     <h1>Culinary Cove</h1>
     <p>Your sanctuary for exceptional flavors</p>
     <nav>
-        <a class="<?php echo !empty($pageKey) && $pageKey === "mission" ? "active" : ""; ?>" href="mission-page.php">Our
-            mission</a>
-        <a class="<?php echo isset($pageKey) && $pageKey === 'ingredients' ? "active" : ""; ?>" href="ingredients.php">Ingredients</a>
-        <a class="<?php echo isset($pageKey) && $pageKey === 'menu' ? "active" : ""; ?>" href="menu.php">Menu</a>
+      <?php if (!isset($pageKey)) echo $pageKey = '' ?>
+      <?php if (!empty($pageKey) && $pageKey === "mission"): ?>
+          <a class="active" href="mission-page.php">Our mission</a>
+      <?php else: ?>
+          <a href="mission-page.php">Our mission</a>
+      <?php endif; ?>
+
+        <a
+          <?php if (!empty($pageKey) && $pageKey === 'ingredients'): ?>
+              class="active"
+          <?php endif; ?>
+                href="ingredients.php">
+            Ingredients
+        </a>
+
+        <a
+          <?php if (!empty($pageKey) && $pageKey === 'menu'): ?>
+              class="active"
+          <?php endif; ?>
+                href="menu.php">
+            Menu
+        </a>
     </nav>
 </header>
 <main>
